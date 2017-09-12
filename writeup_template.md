@@ -1,3 +1,5 @@
+@@ -1 +1,53 @@
+# Self Driving Car Nanodegree - Projects
 # **Finding Lane Lines on the Road** 
 
 ## Writeup Template
@@ -23,7 +25,12 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps.
+1. First, I converted the images to grayscale.
+2. Second, I applied canny edge to detect the lines of the image. Worked with the thresholds to have a better edge image
+3. Selecting the region of interest in the image considering only the traingular region
+4. Next, I applied hough transform to detect the lines and apply the color to them. 
+5. Averaging/extrapolating the lines already detected to form the full extent of left and right lane lines.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
