@@ -32,7 +32,6 @@ My pipeline consisted of 5 steps.
 4. Next, I applied hough transform to detect the lines and apply the color to them. 
 5. Averaging/extrapolating the lines already detected to form the full extent of left and right lane lines.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
@@ -41,14 +40,9 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+One potential shortcoming is that there are in between random lines getting generated however it is able to detect the lines correctly.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to detect the lines without constantly blurring between the lines
